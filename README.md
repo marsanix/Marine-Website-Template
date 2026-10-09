@@ -39,10 +39,10 @@ path gambar dan font tidak perlu diubah manual.
 
 ### Berkas pendamping di `public/`
 
-| Berkas | Untuk |
-| --- | --- |
-| `public/.htaccess` | Apache/cPanel — mengarahkan semua URL ke `index.html` supaya rute Vue tidak 404 saat halaman di-refresh |
-| `public/_redirects` | Netlify — fungsi yang sama |
+| Berkas                | Untuk                                                                                                     |
+| --------------------- | --------------------------------------------------------------------------------------------------------- |
+| `public/.htaccess`  | Apache/cPanel — mengarahkan semua URL ke`index.html` supaya rute Vue tidak 404 saat halaman di-refresh |
+| `public/_redirects` | Netlify — fungsi yang sama                                                                               |
 
 > Karena ini SPA dengan mode history, refresh di `/layanan` akan 404 kalau
 > server tidak punya aturan rewrite. Kedua berkas di atas menanganinya; keduanya
@@ -52,17 +52,17 @@ path gambar dan font tidak perlu diubah manual.
 
 ## Halaman
 
-| Rute | Halaman |
-| --- | --- |
-| `/` | Beranda |
-| `/tentang-kami` | Tentang Kami |
-| `/layanan` | Layanan |
-| `/pengalaman` | Pengalaman Operasi (dengan filter kategori) |
-| `/berita` | Daftar Berita |
-| `/berita/:slug` | Detail Berita |
-| `/kontak` | Kontak (form + peta) |
-| `/admin` | **Pratinjau konsep panel CMS** — mockup, bukan CMS sungguhan |
-| `*` | Halaman 404 |
+| Rute              | Halaman                                                             |
+| ----------------- | ------------------------------------------------------------------- |
+| `/`             | Beranda                                                             |
+| `/tentang-kami` | Tentang Kami                                                        |
+| `/layanan`      | Layanan                                                             |
+| `/pengalaman`   | Pengalaman Operasi (dengan filter kategori)                         |
+| `/berita`       | Daftar Berita                                                       |
+| `/berita/:slug` | Detail Berita                                                       |
+| `/kontak`       | Kontak (form + peta)                                                |
+| `/admin`        | **Pratinjau konsep panel CMS** — mockup, bukan CMS sungguhan |
+| `*`             | Halaman 404                                                         |
 
 Halaman `/admin` sengaja disertakan untuk menunjukkan ke klien bagaimana mereka
 akan mengelola konten nanti. Tombol di dalamnya belum tersambung ke apa pun dan
